@@ -19,7 +19,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import tn.esprit.rh.achat.entities.Produit;
+import com.esprit.examen.entities.Produit;
 import com.esprit.examen.entities.Stock;
 import com.esprit.examen.repositories.OperateurRepository;
 import com.esprit.examen.repositories.StockRepository;
