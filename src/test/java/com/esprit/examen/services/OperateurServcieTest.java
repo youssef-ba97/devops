@@ -10,42 +10,36 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-
-import com.esprit.examen.entities.Facture;
-import com.esprit.examen.entities.Operateur;
-import com.esprit.examen.repositories.OperateurRepository;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.junit.Test;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.context.junit4.SpringRunner;
+import com.esprit.examen.entities.Facture;
+import com.esprit.examen.entities.Operateur;
+import com.esprit.examen.repositories.OperateurRepository;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.times;
 
 import javax.persistence.OneToMany;
 
 @SpringBootTest
-@RunWith(SpringRunner.class)
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
 public class OperateurServcieTest {
 	
-	@MockBean
+	@Mock
 	private OperateurRepository or;
 	
 	private Operateur o1 = new Operateur("fatma","daâs");
 	private Operateur o2 = new Operateur("Fatma","daâs");
 	  
-	@Autowired
+	@InjectMocks
 	    IOperateurService os;
 	
     
