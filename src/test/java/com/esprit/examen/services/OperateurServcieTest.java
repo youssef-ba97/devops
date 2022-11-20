@@ -1,4 +1,4 @@
-package tn.esprit.rh.achat.services;
+package com.esprit.examen.entities;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -20,13 +20,13 @@ import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.rh.achat.entities.Produit;
-import tn.esprit.rh.achat.entities.Stock;
-import tn.esprit.rh.achat.repositories.OperateurRepository;
-import tn.esprit.rh.achat.repositories.StockRepository;
-import tn.esprit.rh.achat.services.ProduitServiceImpl;
-import tn.esprit.rh.achat.entities.Operateur;
-import tn.esprit.rh.achat.repositories.OperateurRepository;
-import tn.esprit.rh.achat.services.OperateurServiceImpl;
+import com.esprit.examen.entities.Stock;
+import com.esprit.examen.repositories.OperateurRepository;
+import com.esprit.examen.repositories.StockRepository;
+import com.esprit.examen.services.ProduitServiceImpl;
+import com.esprit.examen.entities.Operateur;
+import com.esprit.examen.repositories.OperateurRepository;
+import com.esprit.examen.services.OperateurServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
