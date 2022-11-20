@@ -36,7 +36,9 @@ import static org.mockito.Mockito.times;
 import javax.persistence.OneToMany;
 
 @SpringBootTest
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(SpringRunner.class)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(MockitoExtension.class)
 public class OperateurServcieTest {
 	
 	@Mock
