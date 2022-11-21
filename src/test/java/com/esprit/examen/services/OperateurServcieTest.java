@@ -67,7 +67,7 @@ public class OperateurServcieTest {
     
    
     
-  /*  @Test
+    @Test
     public void DeleteOperateurTest() {
     	or.save(o1);
     	os.deleteOperateur(o1.getIdOperateur());
@@ -77,7 +77,7 @@ public class OperateurServcieTest {
     }
 
     
-    @Test 
+/*    @Test 
     public void UpdateOperateurTest() {
     	when(or.save(o1)).thenReturn(o1);
     	assertNotNull(o1);
