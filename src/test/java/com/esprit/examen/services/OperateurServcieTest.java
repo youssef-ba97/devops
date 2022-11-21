@@ -56,7 +56,7 @@ public class OperateurServcieTest {
 		System.out.println("add works !");
 	}
 	
-   /*@Test 
+   @Test 
     public void retrieveAllOperateursTest() {
     	when(or.findAll()).thenReturn(Stream
     			.of(o1,o2)
@@ -67,7 +67,7 @@ public class OperateurServcieTest {
     
    
     
-    @Test
+  /*  @Test
     public void DeleteOperateurTest() {
     	or.save(o1);
     	os.deleteOperateur(o1.getIdOperateur());
