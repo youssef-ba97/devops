@@ -77,7 +77,7 @@ public class OperateurServcieTest {
     }
 
     
-/*    @Test 
+    @Test 
     public void UpdateOperateurTest() {
     	when(or.save(o1)).thenReturn(o1);
     	assertNotNull(o1);
@@ -90,7 +90,7 @@ public class OperateurServcieTest {
     	when(or.findById(o1.getIdOperateur())).thenReturn(Optional.of(o1));
     	assertEquals(o1, os.retrieveOperateur(o1.getIdOperateur()));
     	System.out.println("Retrieve operator works !");
-    }*/
+    }
     
     
 }
