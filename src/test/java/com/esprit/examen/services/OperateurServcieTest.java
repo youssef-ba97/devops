@@ -1,4 +1,4 @@
-/*package com.esprit.examen.services;
+package com.esprit.examen.services;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
-import com.esprit.examen.entities.Facture;
 import com.esprit.examen.entities.Operateur;
 import com.esprit.examen.repositories.OperateurRepository;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -57,7 +56,7 @@ public class OperateurServcieTest {
 		System.out.println("add works !");
 	}
 	
-   @Test 
+   /*@Test 
     public void retrieveAllOperateursTest() {
     	when(or.findAll()).thenReturn(Stream
     			.of(o1,o2)
@@ -91,7 +90,7 @@ public class OperateurServcieTest {
     	when(or.findById(o1.getIdOperateur())).thenReturn(Optional.of(o1));
     	assertEquals(o1, os.retrieveOperateur(o1.getIdOperateur()));
     	System.out.println("Retrieve operator works !");
-    }
+    }*/
     
     
-}*/
+}
